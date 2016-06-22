@@ -1,0 +1,23 @@
+class TodoList
+    attr_reader :tasks
+    def initialize
+        @tasks = []
+    end
+
+    def add_task(task)
+    	@tasks << task
+    end
+
+    def delete_task(task)
+    	task.delete_if{|id| id == @id}
+    end
+
+    def find_task_by_id(task)
+    	@tasks.each do |X|
+    		if x.id == task
+    			puts x.content
+    		end
+    	end
+	 end
+
+end
