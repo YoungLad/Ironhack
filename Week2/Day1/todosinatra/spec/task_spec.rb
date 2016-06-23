@@ -39,7 +39,4 @@ RSpec.describe task do
 		expect(task.sort_by_created).to eq(arr)
 	end
 
-
-	
-
 end

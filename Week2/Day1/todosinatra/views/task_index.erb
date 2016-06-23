@@ -1,0 +1,9 @@
+<h1>welcome to the TodoList</h1>
+
+<ol class="tasks">
+<% @todo.tasks.each do |x| %>
+<li><%= x.content%></li>
+<% end %>
+</ol>
+
+<a href="/new_task">Add a new</a>

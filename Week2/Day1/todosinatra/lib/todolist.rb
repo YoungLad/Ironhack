@@ -16,9 +16,9 @@ class TodoList
 
     def find_task_by_id(task)
     	@tasks.select do |x|
-    		if x.id == task
-    			 return x.content
-    	else
+    	   if x.id == task
+    		 return x.content
+    	   else
     		return nil
     	end
     	end
