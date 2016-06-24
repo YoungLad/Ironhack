@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<P> What movie came out in <%= @random_movie.year %> </P>
+<% @quizzy.each do |poster| %>
+<%if poster.year == @check %>
+	<img src="<%= poster.poster %>" onClick="alert('yay')" height="200" width="200" />
+	<%else %> 
+<img src="<%= poster.poster %>" onClick="alert('nay')" height="200" width="200" />
+<% end %>
+<% end%>
+
+</body>
+</html>
