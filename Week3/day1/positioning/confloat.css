@@ -1,0 +1,21 @@
+.box-set:before, .box-set:after{
+	content: "";
+	display: table;
+}
+.box-set:after{
+	clear: both;
+}
+
+
+.box-set{
+	background: #eaeaed;
+	overflow: auto;
+}
+
+.box{
+	background: #2bd34a;
+	text-align: center;
+	float: left;
+	margin: 1.85%;
+	width: 30%;
+}

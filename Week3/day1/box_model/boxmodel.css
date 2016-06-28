@@ -1,0 +1,17 @@
+.box{
+	height: 9000px;
+	background: #654678;
+	margin: 100px;
+	box-shadow: 20px 20px 20px 20px rgba(25, 222, 100, 0.9);
+}
+
+.content{
+	height: 9001px;
+	width: 500px;
+	margin: 52px;
+	border: 10px;
+	background: red;
+	border-style: solid;
+	border-color: blue;
+
+}

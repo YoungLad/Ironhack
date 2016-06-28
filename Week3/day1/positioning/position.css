@@ -1,0 +1,30 @@
+code{
+background: #2bd34a;
+border-radius: 6px;
+color: #fff;
+display: block;
+padding: 24px 15px;
+text-align: center;
+height: 500px;
+overflow: auto;
+/*position: relative;*/
+/*top: 300px;*/
+/*left: -200px;
+bottom: -300px;*/
+}
+img { 
+	float: right;
+
+}
+header{
+	background: red;
+	margin: 0 1.5% 24px 1.5%;
+	position: fixed;
+	top: 500px;
+	right: 50px;
+}
+section,
+aside,
+footer {
+	margin: 0 1.5% 24px 1.5%;
+}
