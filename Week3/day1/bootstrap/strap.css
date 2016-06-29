@@ -53,4 +53,13 @@ body{
 	position: relative;
 	left: 1550px;
 	top: -200px;
+	color: white
+	background: none;
+	width: 70px;
+}
+
+.panel-heading,
+.panel-body{
+	
+	color: black;
 }
