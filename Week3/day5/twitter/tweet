@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/610edda386.js"></script>
+	<link rel="stylesheet" type="text/css" href="twitter.css">
+</head>
+<body>
+	<div class="row">
+		<div class="topbar js-topbar container fluid">
+			<div class="global-nav" data-section-term="top-nav">
+				<div class="global-nav-inner">
+					<div class="container">
+						<ul class="nav js-global-actions">
+							<li class="home">
+							<a href="">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<span class="text">Home</span>
+							</a>
+								
+							</li>
+							<li class="moemts">
+								<a class="js-nav js-tooltip js-dynamic-tooltip" data-placement="bottom" href="/i/moments" data-component-context="moments_nav" data-nav="moments" data-original-title="">
+        							<i class="fa fa-bolt" aria-hidden="true"></i>
+        							<span class="text">Moments</span>
+      							</a>
+							</li>
+						</ul>
+						<div class="pull-right">
+							<div role="search">
+								<form class="t1-form form-search js-search-form" action="search"></form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- Nav bar -->
+
+	<div class="row">
+		
+	</div><!--  background image -->
+
+	<div class="row">
+		
+	</div> <!-- info bar -->
+</body>
+</html>
