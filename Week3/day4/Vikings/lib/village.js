@@ -8,7 +8,7 @@ class War {
     this.victims = victims;
     this.turns = randomInteger(5, 8);
     this.casualties = {
-      vikings: [],
+      fighters: [],
       victims: []
     }
   }
@@ -18,18 +18,18 @@ class War {
       var survivors = [];
       var theWar = this;
 
-      this.assaulters.forEach(function (viking) {
+      this.assaulters.forEach(function (fighter) {
         var randomIndex = randomInteger(0, theWar.victims.length - 1)
 
         var randomVictim = theWar.victims[randomIndex];
 
-        viking.attack(randomVictim);
-        randomVictim.attack(viking);
+        fighter.attack(randomVictim);
+        randomVictim.attack(fighter);
 
-        if (viking.health <= 0){
-          theWar.casualties.vikings.push(viking);
+        if (fighter.health <= 0){
+          theWar.casualties.fighters.push(fighter);
         } else {
-          survivors.push(viking)
+          survivors.push(fighter)
         }
 
         if (randomVictim.health <= 0){
@@ -45,7 +45,7 @@ class War {
   }
 
   printCasualtyReport () {
-    console.log(`The vikings had ${this.casualties.vikings.length - 1} casualties`);
+    console.log(`The fighters had ${this.casualties.fighters.length - 1} casualties`);
     console.log(`The saxons had ${this.casualties.victims.length - 1} casualties`);
   }
 }
