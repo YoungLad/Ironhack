@@ -6,4 +6,8 @@ Rails.application.routes.draw do
 
   # ***** New *****
   post "/text_inspection", to: "text_inspection#create"
+
+  get "/asciis", to: "asciis_controller#new"
+
+  post "/asciis", to: "asciis_controller#create"
 end
