@@ -1,0 +1,18 @@
+<h1>Word Central</h1>
+
+<h2>Submit text for inspection</h2>
+
+<form action="/text_inspection" method="post">
+  <div>
+    <label for="text_inspection_user_text">Text</label>
+    <textarea name="text_inspection[user_text]" id="text_inspection_user_text"></textarea>
+  </div>
+
+  <!-- ***** New ***** -->
+  <button type="submit">Submit text</button>
+
+  <!-- ***** New ***** -->
+  <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+</form>
+</form>
