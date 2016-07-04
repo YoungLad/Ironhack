@@ -14,6 +14,8 @@ class War {
   }
 
   initiate () {
+    console.log(this.assaulters)
+    console.log("")
     for (var i = 1; i <= this.turns; i++){
       var survivors = [];
       var theWar = this;
@@ -42,6 +44,8 @@ class War {
     }
 
     this.printCasualtyReport();
+        console.log(theWar.assaulters)
+
   }
 
   printCasualtyReport () {

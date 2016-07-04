@@ -1,5 +1,5 @@
 "use strict";
-
+var read = require('read');
 var Viking = require("./lib/viking.js");
 var Ninja = require("./lib/ninja.js");
 var Mage = require("./lib/mage.js");
@@ -12,6 +12,19 @@ var War = require("./lib/village.js");
 
 // var thisPitFight = new PitFight(viking1, viking2, 10);
 // thisPitFight.initiate();
+
+var options = {
+    prompt: "Choose a village to attak\n Easy-1 Medium-2 Hard-3\n>"
+}
+// Our options object, the prompt is simply what will appear in the command line when read is called
+
+read(options, displayName)
+// The prompt itself, passing options, and using our callback function after input
+
+function displayName (err, name){
+    console.log("Your name is: " + name)
+}
+// Outputs whatever the user has entered back to the console
 
 
 console.log("----------------------------");
@@ -27,7 +40,7 @@ var vikings = [
   new Viking("Elof", 7, 1),
   new Viking("Felman", 213, 30),
   new Ninja("Gustav", 200, 3, true),
-  new Mage("88888888888", 200, 16, 32)
+  new Mage("88888888888", 200, 16, 3)
     ]
 
 var saxonTown = [];

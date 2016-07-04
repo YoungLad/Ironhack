@@ -12,4 +12,4 @@ firstQuiz.addQuestion(question1)
 firstQuiz.addQuestion(question2)
 firstQuiz.addQuestion(question3)
 
-firstQuiz.ask
+firstQuiz.ask()
