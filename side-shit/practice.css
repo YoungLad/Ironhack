@@ -1,0 +1,37 @@
+body{
+	background-color: #202125;
+}
+
+.screen{
+	background-image: url(css.gif);
+	background-color: red;
+	padding: 300px;
+	border-color: blue;
+	margin: 0px;
+	height: 75px;
+	width: 555px;
+	content: red;
+	position: absolute;
+	left: 303px;
+}
+
+
+#logo{
+	position: absolute;
+	left: 303px;
+	
+}
+
+.navbar{
+	background-color: black;
+	border: none;
+}
+
+.btn{
+	color: white;
+	background-color: #373636;
+	border-radius: 0;
+	padding: 10px;
+	font-size: 14px;
+	border-color: #373636;
+}
