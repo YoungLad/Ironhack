@@ -20,4 +20,9 @@ class ContactController < ApplicationController
   		@contacts_arr = Contact.order(created_at: 'asc')
   		render 'index'
   	end
+
+  	def show
+  		@contacts_arr = Contact.order(created_at: 'asc')
+
+  		render 'show'
 end

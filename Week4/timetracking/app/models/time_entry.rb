@@ -5,5 +5,4 @@ class TimeEntry < ActiveRecord::Base
 	validates :date, presence: true
 	validates :hours, presence: true
 	validates :minutes, presence: true
-	validates_associated :project
 end

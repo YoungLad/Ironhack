@@ -1,4 +1,4 @@
-<% if @my_entry.erros.any?%>
+<% if @my_entry.errors.any?%>
 
 	<ul>
 		<% @my_entry.errors.full_messages.each do |error_msg| %>
@@ -20,6 +20,8 @@
 	<%= f.label :date %>
 	<%= f.date_field :date, size: 4 %>
 	<br>
+	<%= f.label :comments %>
+	<%= f.text_field :comments, size: 4 %>
 
 	<button><%= f.submit"save"%></button>
 	<%end%>

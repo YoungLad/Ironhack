@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   post '/contacts', to: 'contact#create'
 
   get '/contacts', to: 'contact#index'
+
+  get 'contacts', to: 'contacts#show'
 end

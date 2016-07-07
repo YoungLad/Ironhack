@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get "/asciis", to: "asciis_controller#new"
 
   post "/asciis", to: "asciis_controller#create"
+
+  get "/placeholder", to: ""
 end
