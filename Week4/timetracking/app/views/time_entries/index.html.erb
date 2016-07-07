@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
 	<h1><%=@my_project.name%></h1>
 	<ul>
 		<% @my_entries.each do |entry|%>
@@ -11,8 +5,12 @@
 			<%= entry.hours %> h
 			<%= entry.minutes%> m -
 			<%=entry.date%>
+
+			<a href="/project/<%= @my_project.id %>/time_entries/<%= entry.id %>/edit">
+				Edit
+			</a>
 		</li>
 		<% end %>
 	</ul>
-</body>
-</html>
+
+	<a href="/projects/<%= @my_project.id %>/time_entries/new">Add new entry</a>
