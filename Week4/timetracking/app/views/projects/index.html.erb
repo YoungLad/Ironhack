@@ -3,7 +3,8 @@
 <ul>
 	<% @project_array.each do |the_project| %>
 	<li>
-		<%= the_project.name %>
+		<a href="/projects/<%= the_project.id %>"> <%= the_project.name %>
+		</a>
 	</li>
 		
 	<%end%>
