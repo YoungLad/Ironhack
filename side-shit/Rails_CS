@@ -1,0 +1,25 @@
+Routes
+Controller <if no controler('s) create controller <plural>>
+Action(method)
+View <Only if it's a get>
+|
+Model <Only if needed <singular>>
+------------------------------------------------------
+Index - List of books
+	get/books
+New - form for creation *2 --------------------|
+	get/books/new                              |
+Create - Receiving the form submission *2 ------
+	post/books
+Show - displays the details of a book
+	get/books/57
+Edit - form for editing *1 ------------|
+	get/books/57/edit                  |
+Update - receives form submission *1 ---
+	patch/books/57
+	put/books/57
+Destroy - deletes a book
+	delete/books/57
+
+*2 -- create the form
+*1 -- process the form

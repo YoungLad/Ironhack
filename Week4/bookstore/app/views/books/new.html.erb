@@ -1,0 +1,34 @@
+<h2> Add a new book</h2>
+
+<%= form_for @the_book do |f| %>
+
+	<div>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	</div>
+
+	<div>
+	<%= f.label :author %>
+	<%= f.text_field :author %>
+	</div>
+
+	<div>
+	<%= f.label :year %>
+	<%= f.text_field :year %>
+	</div>
+
+	<div>
+	<%= f.label :description %>
+	<%= f.text_field :description %>
+	</div>
+
+	<div>
+	<%= f.label :genre %>
+	<%= f.text_field :genre %>
+	</div>
+
+	<div>
+	<%= f.label :rating %>
+	<%= f.text_field :rating %>
+	</div>
+<% end %>

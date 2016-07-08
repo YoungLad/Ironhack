@@ -1,0 +1,17 @@
+<h2> LIst of books</h2>
+
+
+<ul>
+	<% @books_array.each do |the_book| %>
+	<li>
+		<h3> <%= the_book.title %></h3>
+		<p>by <%= the_book.author %> </p>
+	</li>
+	<% end %>
+</ul>
+
+<!-- <a href="/books/new">
+	Add A new Book
+</a> -->
+
+<%= link_to ("Add a new book", new_book_path) %>
