@@ -1,12 +1,17 @@
-<h1>Music Concert Network</h1>
-
-<ul>
-	<% @concert_array.each do |concert| %>
-	<li>
-		<h4> <%= concert.artist %></h3>
-		<p>by <%= concert.date %> </p>
-	</li>
+<ul><center>
+	<% @concert_today.each do |concert| %>
+		<h3> <%= concert.artist %></h3>
+		<p><%= concert.city %> </p>
 	<% end %>
-</ul>
+</center></ul>
 
-<%= link_to("Announce a new concert?", new_concert_path)%>
+<div id="mySidenav" class="sidenav">
+	<% @concert_month.each do |concert| %>
+		<h3> <%= concert.artist %></h3>
+		<p><%= concert.city %> </p>
+
+	<a href="/concerts/<%=concert.id%>/">More info</a>
+	<% end %>
+<div>
+
+<center><%= link_to("Announce a new concert", new_concert_path)%></center>
