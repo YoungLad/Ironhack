@@ -1,0 +1,8 @@
+o: ActiveSupport::Cache::Entry:@valueo:Net::HTTPOK:@http_version"1.1:
+@code"200:@message"OK:@header{"	date[""Thu, 14 Jul 2016 18:47:14 GMT"content-type["application/json"transfer-encoding["chunked"connection["keep-alive"set-cookie["__cfduid=dfdcdbf599d89efe0fab4cf0a26733ad91468522032; expires=Fri, 14-Jul-17 18:47:12 GMT; path=/; domain=.pokeapi.co; HttpOnly"	vary["Accept"x-frame-options["SAMEORIGIN"cache-control["s-maxage=360, max-age=360"server["cloudflare-nginx"cf-ray["2c27244db5a02eb1-MIA:
+@bodyI"{"created": "2013-11-16T17:20:41.080290", "id": 304, "image": "/media/img/303.png", "modified": "2013-11-16T17:20:41.080247", "name": "Mawile_auto", "pokemon": {"name": "mawile", "resource_uri": "/api/v1/pokemon/303/"}, "resource_uri": "/api/v1/sprite/304/"}:ET:
+@readT:	@urio:URI::HTTP:@schemeI"	http;T:
+@user0:@password0:
+@hostI"pokeapi.co;T:
+@portiU:
+@pathI"/api/v1/sprite/304/;T:@query0:@opaque0:@registry0:@fragment0:@parser0:@decode_contentT:@socket0:@body_existT:@created_atf1468522033.859252:@expires_inf4.32e4

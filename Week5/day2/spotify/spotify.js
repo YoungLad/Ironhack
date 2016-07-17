@@ -13,14 +13,24 @@ function fetchArtists(event){
 		});
 }
 
-function displayArtists(searchTerm){
-	console.log(searchTerm.artists.items[0].images[0].url)
-	var artistArray = searchTerm;
+function fetchAlbulms(event){
+	$.ajax({
+		type: "GET",
+		url: 'https://api.spotify.com/v1/albums/{id}',
+		success: displayArtists,
+		error: searchError
+});
+}
+
+function displayArtists(response){
+	console.log(response.artists)
+	
+	var artistArray = response;
 
 	artistArray.artists.items.forEach(function (artist){
 		$('#display').append(`<h1>` + artist.name + '</h1>')
 		if (artist.images.length > 0){
-		$('#display').append(`<img height="200" width="250" src="${artist.images[0].url}"" >`)
+		$('#display').append(`<img height="200" width="250" src="${artist.images[0].url}" >`)
 	}
 	else{
 		$('#display').append('ugggghhttht')

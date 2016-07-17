@@ -1,0 +1,8 @@
+o: ActiveSupport::Cache::Entry:@valueo:Net::HTTPOK:@http_version"1.1:
+@code"200:@message"OK:@header{"	date[""Fri, 15 Jul 2016 13:30:06 GMT"content-type["application/json"transfer-encoding["chunked"connection["keep-alive"set-cookie["__cfduid=dce37fab0392a5146bbb90477d0416cbd1468589406; expires=Sat, 15-Jul-17 13:30:06 GMT; path=/; domain=.pokeapi.co; HttpOnly"	vary["Accept"x-frame-options["SAMEORIGIN"cache-control["s-maxage=360, max-age=360"server["cloudflare-nginx"cf-ray["2c2d912be466181c-MIA:
+@bodyI"Ý{"abilities": [{"name": "drought", "resource_uri": "/api/v1/ability/70/"}], "attack": 104, "catch_rate": 0, "created": "2013-11-03T15:05:42.541047", "defense": 78, "descriptions": [], "egg_cycles": 0, "egg_groups": [], "ev_yield": "", "evolutions": [], "exp": 0, "growth_rate": "", "happiness": 0, "height": "0", "hp": 78, "male_female_ratio": "", "modified": "2016-05-03T22:25:53.397996", "moves": [], "name": "Charizard-mega-y", "national_id": 10035, "pkdx_id": 10035, "resource_uri": "/api/v1/pokemon/10035/", "sp_atk": 159, "sp_def": 115, "species": "", "speed": 100, "sprites": [], "total": 0, "types": [{"name": "flying", "resource_uri": "/api/v1/type/3/"}, {"name": "fire", "resource_uri": "/api/v1/type/10/"}], "weight": "0"}:ET:
+@readT:	@urio:URI::HTTP:@schemeI"	http;T:
+@user0:@password0:
+@hostI"pokeapi.co;T:
+@portiU:
+@pathI"/api/v1/pokemon/10035/;T:@query0:@opaque0:@registry0:@fragment0:@parser0:@decode_contentT:@socket0:@body_existT:@created_atf1468589406.2883599:@expires_inf4.32e4
