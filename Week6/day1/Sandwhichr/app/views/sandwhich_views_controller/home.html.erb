@@ -1,0 +1,11 @@
+<h2>Sandwiches</h2>
+
+<% @sandwhiches_array.each do |sandwhich| %>
+
+<li>
+	<a href="/sandwhiches/<%=sandwhich.id %>">
+	<%= sandwhich.name%>	
+	</a>
+</li>
+
+<% end%>

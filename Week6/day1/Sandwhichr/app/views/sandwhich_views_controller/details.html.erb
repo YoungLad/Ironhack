@@ -1,0 +1,28 @@
+<h1>Sandwhich details/ingredients</h1>
+<% sum = 0 %>
+<%= @sandwhich.name %> 
+<%= @sandwhich.bread_type%><br>
+<% @sandwhich.ingredients.each do |detail| %>
+<li>
+	<%= detail.name %>
+	<%= detail.calories %>
+	<% sum = sum + detail.calories%>
+</li>
+<%end%>
+	<div class="calories"> calories: <%= sum%> </div>
+
+<br>
+<form class="ingredients_list" data-sandID="<%=@sandwhich.id%>">
+	
+<% @ingredients_array.each do |ingredient| %>
+
+<li>
+	<button class="btn" data-ingID="<%=ingredient.id%>" >
+	<%= ingredient.name%>	
+		
+	</button>
+	
+</li>
+</form>
+<br>
+<% end%>
