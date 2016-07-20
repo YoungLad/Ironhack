@@ -1,29 +1,33 @@
 $(document).ready(function(event){
 
-	var sandID = $('.ingredients_list').data("sandID")
+	var sandID = $('.ingredients_list').data("sand-id")
 	$('.btn').on("click", function(event){
-		var ingID =  $(event.currentTarget).data("ingID");
+		var ingID =  $(event.currentTarget).data("ing-id");
+		console.log(ingID);
 	
-		fetchingredients();
+		fetchingredients(ingID, sandID);
 	})
 });
 
-function fetchingredients(event){
+function fetchingredients(ingID, sandID){
+	console.log(ingID);
+	console.log(sandID);
+
 	$.ajax({
 		type: "POST",
-		url: `/api/sandwiches/${sandID}/ingredients/add`,
-		data: ingID
-		success: addIngredient,
+		url: "/api/sandwhiches/" +sandID+ "/ingredients/add",
+		data: ingID,
+		success: update,
 		error: error
 });
 }
 
+function update(response){
+	console.log("dude, yamtown city")
+	$(".ingredients_list").append(response.name)
 
-function addIngredient(){
-	
-	
 }
 
-function error(){
-	console.log("you glubed up")
+function error(err){
+	console.log("you glubbed up", err)
 }

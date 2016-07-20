@@ -43,17 +43,17 @@ class SandwhichesController < ApplicationController
 		head :no_content
 	end
 
-	# def add_ingredient
-	# 	ingredient = Ingredient.find_by(id: params[:id])
-	# 	unless ingredient
-	# 		render json: {error: "ingredient not found"}, status: 404
-	# 		return
+	def add_ingredient
+		sandwhich = Sandwhich.find(params[:id])
+		ingredient = Ingredient.find_by(id: params[:ingID])
 
-	# 		# sandwhich.id.ingredients.update(ingredient_params)
-	# 	end
+			sandwhich.ingredients.push(ingredient)
+
+			render json: sandwhich.to_json(include: :ingredients)
+		end
 
 		
-	# end
+	end
 
 	private
 

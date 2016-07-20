@@ -3,6 +3,6 @@ resources :sandwhiches, only: [:index, :show], controller: "sandwhich_views_cont
 	scope '/api' do
   resources :sandwhiches
   resources :ingredients
-	post "/sandwiches/:id/ingredients/add" => "sandwiches#add_ingredient"
+	post "/sandwhiches/:id/ingredients/add" => "sandwhiches#add_ingredient"
 end
 end

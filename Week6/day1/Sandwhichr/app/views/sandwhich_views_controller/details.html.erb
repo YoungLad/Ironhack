@@ -12,17 +12,17 @@
 	<div class="calories"> calories: <%= sum%> </div>
 
 <br>
-<form class="ingredients_list" data-sandID="<%=@sandwhich.id%>">
+<div class="ingredients_list" data-sand-id="<%=@sandwhich.id%>">
 	
 <% @ingredients_array.each do |ingredient| %>
 
 <li>
-	<button class="btn" data-ingID="<%=ingredient.id%>" >
+	<button class="btn" data-ing-id="<%=ingredient.id%>" >
 	<%= ingredient.name%>	
 		
 	</button>
 	
 </li>
-</form>
+</div>
 <br>
 <% end%>
