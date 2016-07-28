@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :activity
+  resources :users
+  resources :activities
 end

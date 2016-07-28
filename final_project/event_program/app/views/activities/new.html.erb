@@ -1,0 +1,20 @@
+<h2> Create a thing</h2>
+
+<%= form_for @new_thing do |f| %>
+	<div>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	</div>
+
+	<div>
+	<%= f.label :address %>
+	<%= f.text_field :address %>
+	</div>
+
+	<div>
+	<%= f.label :price %>
+	<%= f.text_field :price %>
+	</div>
+	
+    <%= f.button "submit" %>
+<% end %>
