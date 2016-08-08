@@ -4,6 +4,10 @@ gem 'gmaps4rails'
 gem 'geocoder'
 gem 'underscore-rails'
 gem 'geokit-rails'
+gem 'devise'
+gem 'faker'
+gem 'twitter-bootstrap-rails'
+gem 'rails_12factor', group: :productino
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record

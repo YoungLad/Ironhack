@@ -1,10 +1,19 @@
 class ActivitiesController < ApplicationController
+	  before_action :authenticate_user!, only: :show
+
 	def index
 		render 'index'
 	end
 
 	def show
+		@new_marker = Location.new
+		@markers_array = Location.all
+		render 'show'
+		end
 
+	def custom_route
+		markers_array = Location.all
+		render json: markers_array.to_json
 	end
 
 	def new
@@ -26,4 +35,5 @@ class ActivitiesController < ApplicationController
 	def activity_params
 		params.require(:activity).permit(:title, :location, :price)
 	end
+	
 end

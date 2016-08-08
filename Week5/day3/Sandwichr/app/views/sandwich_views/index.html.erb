@@ -1,0 +1,15 @@
+<h1> Our Sandwiches </h1>
+<ul>
+<% @sandwiches.each do |the_sandwich| %>
+	
+		<li>
+		<a href="/sandwiches/<%= the_sandwich.id %>">
+		<%= the_sandwich.name %>
+		</a>
+		</li>
+	
+<% end %>
+</ul>
+
+<%= link_to "Home", '/' %> <br>
+<%= link_to "Logout", destroy_user_session_path, method: :delete %>

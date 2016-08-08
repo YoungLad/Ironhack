@@ -37,6 +37,22 @@ function createMarker(position){
   });
 }
 
+function createEvent(position){
+  var eventContent = $('#event');
+  console.log(eventContent)
+  var infowindow = new google.maps.InfoWindow({
+          content: eventContent
+        });
+
+        var marker = new google.maps.Marker({
+          position: position,
+          map: map,
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+
 function setupAutocomplete(){
   var input = $('#get-places')[0];
   var autocomplete = new google.maps.places.Autocomplete(input)
@@ -45,9 +61,8 @@ function setupAutocomplete(){
     if (place.geometry.location){
       map.setCenter(place.geometry.location);
       map.setZoom(17);
-      createMarker(place.geometry.location)
-      
-    }else{
+    }
+    else{
       alert("The place has no location")
     }
   });

@@ -1,19 +1,19 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: :show
 
   # GET /users
   # GET /users.json
   def index
     @users = User.all
     @hash = Gmaps4rails.build_markers(@users) do |user, marker|
-     marker.lat user.latitude
-      marker.lng user.longitude
 end
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    @user = User.find(params[:id])
+    render 'users/show'
   end
 
   # GET /users/new
@@ -73,6 +73,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:latitude, :longitude, :address, :description, :title)
+      params.require(:user).permit(:name, :email, :password, :password_configuration, :latitude, :longitude)
     end
 end
