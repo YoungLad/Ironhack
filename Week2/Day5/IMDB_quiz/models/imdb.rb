@@ -18,7 +18,3 @@ class Movies
 		return temp_array[0..8]
 	end
 end
-
-# damn = Movies.new("iron")
-
-# damn.search_poster
