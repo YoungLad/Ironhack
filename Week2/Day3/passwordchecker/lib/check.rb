@@ -1,3 +1,5 @@
+# lol this is important
+
 class Check
 	def initialize(email, password)
 		@email = email
